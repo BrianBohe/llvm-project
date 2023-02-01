@@ -115,7 +115,7 @@
     <!-- <_LLVMBuildArgs Condition="'$(BuildOS)' == 'Linux' and '$(OutputRid)' != 'linux-musl-arm64'" Include="-DCMAKE_C_COMPILER=clang-9" />
     <_LLVMBuildArgs Condition="'$(BuildOS)' == 'Linux' and '$(OutputRid)' != 'linux-musl-arm64'" Include="-DCMAKE_CXX_COMPILER=clang++-9" /> -->
     <_LLVMBuildArgs Condition="'$(BuildOS)' == 'Linux'" Include="-DCMAKE_C_COMPILER=$(ClangVersion)" />
-    <_LLVMBuildArgs Condition="'$(BuildOS)' == 'Linux'" Include="-DCMAKE_CXX_COMPILER=$(Clang++Version)" />
+    <_LLVMBuildArgs Condition="'$(BuildOS)' == 'Linux'" Include="-DCMAKE_CXX_COMPILER=$(ClangPlusVersion)" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(BuildOS)' != 'Windows_NT'">
